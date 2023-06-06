@@ -1,0 +1,272 @@
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~
+$ cd desktop
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop (main)
+$ mkdir 20230605-karenperez
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop (main)
+$ cd 20230605-karenperez
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git init
+Initialized empty Git repository in C:/Users/Administrador/Desktop/20230605-kare
+nperez/.git/
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git remote add origin https://github.com/Karenpe1/20230605-karenperez.git
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ touch comandos.txt main.js index.html
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git add .
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git commit -m "commit 1 de karen perez"
+[main (root-commit) 626b166] commit 1 de karen perez
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 243 bytes | 81.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Karenpe1/20230605-karenperez.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git branch feature
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ mkdir hardware software seguridadinformatica
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ touch 20230605-karenperez/hardware/resumen.txt 20230605-karenperez/software/resumen.txt 20230605-karenperez/seguridadinformatica/resumen.txt
+touch: cannot touch '20230605-karenperez/hardware/resumen.txt': No such file or directory
+touch: cannot touch '20230605-karenperez/software/resumen.txt': No such file or directory
+touch: cannot touch '20230605-karenperez/seguridadinformatica/resumen.txt': No such file or directory
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ touch hardware/resumen.txt software/resumen.txt seguridadinformatica/resumen.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ ls -R
+.:
+comandos.txt  hardware/  index.html  main.js  seguridadinformatica/  software/
+
+./hardware:
+resumen.txt
+
+./seguridadinformatica:
+resumen.txt
+
+./software:
+resumen.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git push -u origin feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Karenpe1/20230605-karenperez/pull/new/feature
+remote:
+To https://github.com/Karenpe1/20230605-karenperez.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git add .
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git commit -m "commit 2 de karen perez"
+[feature 6d68a1e] commit 2 de karen perez
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hardware/resumen.txt
+ create mode 100644 seguridadinformatica/resumen.txt
+ create mode 100644 software/resumen.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git push -u origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Karenpe1/20230605-karenperez.git
+   626b166..6d68a1e  feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ ls -R
+.:
+comandos.txt  index.html  main.js
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ mv main.js resumenhardware.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ mv index.html resumensoftware.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ ls -R
+.:
+comandos.txt  resumenhardware.txt  resumensoftware.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ nano resumensoftware.txt
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~
+$ cd desktop
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop (main)
+$ mkdir 20230605-karenperez
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop (main)
+$ cd 20230605-karenperez
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git init
+Initialized empty Git repository in C:/Users/Administrador/Desktop/20230605-kare
+nperez/.git/
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git remote add origin https://github.com/Karenpe1/20230605-karenperez.git
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ touch comandos.txt main.js index.html
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git add .
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git commit -m "commit 1 de karen perez"
+[main (root-commit) 626b166] commit 1 de karen perez
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 243 bytes | 81.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Karenpe1/20230605-karenperez.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git branch feature
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ mkdir hardware software seguridadinformatica
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ touch 20230605-karenperez/hardware/resumen.txt 20230605-karenperez/software/resumen.txt 20230605-karenperez/seguridadinformatica/resumen.txt
+touch: cannot touch '20230605-karenperez/hardware/resumen.txt': No such file or directory
+touch: cannot touch '20230605-karenperez/software/resumen.txt': No such file or directory
+touch: cannot touch '20230605-karenperez/seguridadinformatica/resumen.txt': No such file or directory
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ touch hardware/resumen.txt software/resumen.txt seguridadinformatica/resumen.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ ls -R
+.:
+comandos.txt  hardware/  index.html  main.js  seguridadinformatica/  software/
+
+./hardware:
+resumen.txt
+
+./seguridadinformatica:
+resumen.txt
+
+./software:
+resumen.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git push -u origin feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Karenpe1/20230605-karenperez/pull/new/feature
+remote:
+To https://github.com/Karenpe1/20230605-karenperez.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git add .
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git commit -m "commit 2 de karen perez"
+[feature 6d68a1e] commit 2 de karen perez
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hardware/resumen.txt
+ create mode 100644 seguridadinformatica/resumen.txt
+ create mode 100644 software/resumen.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git push -u origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Karenpe1/20230605-karenperez.git
+   626b166..6d68a1e  feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ ls -R
+.:
+comandos.txt  index.html  main.js
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ mv main.js resumenhardware.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ mv index.html resumensoftware.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ ls -R
+.:
+comandos.txt  resumenhardware.txt  resumensoftware.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ nano resumensoftware.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ nano resumenhardware.txt
+
+Administrador@DESKTOP-IDV4FJ7 MINGW64 ~/desktop/20230605-karenperez (main)
+$ nano comandos.txt
